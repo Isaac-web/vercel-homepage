@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/react-syntax-highlighter": "^15.5.13",
     "apexcharts": "^4.5.0",
+    "framer-motion": "^12.4.7",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
     "react-dom": "^19.0.0",

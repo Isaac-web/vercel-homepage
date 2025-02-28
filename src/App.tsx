@@ -11,6 +11,7 @@ import RollbackCard from './components/rollback-card';
 import ConformanceCodeownersContainer from './components/conformance-codeowners-container';
 import { ExpandYourEntrepriseSection } from './components/expand-your-entreprise-section';
 import DeployOnceDeliverEverywhereSection from './components/deploy-once-deliver-everywhere-section';
+import FrameworksSection from './components/frameworks-section';
 
 function App() {
   return (
@@ -226,6 +227,7 @@ function App() {
 
         <ExpandYourEntrepriseSection />
         <DeployOnceDeliverEverywhereSection />
+        <FrameworksSection />
       </div>
     </div>
   );
