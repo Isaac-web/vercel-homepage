@@ -1,14 +1,15 @@
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
+import Navbar from './components/navbar';
+import HeroSection from './components/hero-section';
 import { FaTerminal } from 'react-icons/fa';
-import CommentCard from './components/CommentCard';
-import { CommentCardPointer } from './components/CommentCardPointer';
+import CommentCard from './components/comment-card';
+import { CommentCardPointer } from './components/comment-card-pointer';
 import { BiBookBookmark, BiMessageRounded } from 'react-icons/bi';
 import SectionHeader from './components/section-header';
 import { AiOutlineLineChart } from 'react-icons/ai';
 import { TbReload } from 'react-icons/tb';
 import RollbackCard from './components/rollback-card';
 import ConformanceCodeownersContainer from './components/conformance-codeowners-container';
+import { ExpandYourEntrepriseSection } from './components/expand-your-entreprise-section';
 
 function App() {
   return (
@@ -220,6 +221,10 @@ function App() {
               <ConformanceCodeownersContainer />
             </div>
           </div>
+        </div>
+
+        <div>
+          <ExpandYourEntrepriseSection />
         </div>
       </div>
     </div>

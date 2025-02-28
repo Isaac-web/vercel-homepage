@@ -2,7 +2,7 @@ import Triangle from './triangle';
 
 const HeroSection = () => {
   return (
-    <div className=" h-screen flex flex-col justify-center items-center gap-y-10">
+    <div className=" h-screen flex flex-col justify-center items-center gap-y-10 border-t border-t-white/10">
       <h1 className="font-bold text-5xl text-white">
         Your complete platform for the web
       </h1>
