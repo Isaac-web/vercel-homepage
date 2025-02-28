@@ -8,6 +8,7 @@ import SectionHeader from './components/section-header';
 import { AiOutlineLineChart } from 'react-icons/ai';
 import { TbReload } from 'react-icons/tb';
 import RollbackCard from './components/rollback-card';
+import ConformanceCodeownersContainer from './components/conformance-codeowners-container';
 
 function App() {
   return (
@@ -43,8 +44,24 @@ function App() {
             </div>
 
             <div className="w-full relative">
-              <div className="w-[24em] h-[15em] bg-gray-50/10 rounded-xl absolute" />
-              <div className="w-[24em] h-[15em] bg-gray-50/10 rounded-xl absolute top-[8em] left-[6em]" />
+              <div
+                className="w-[24em] h-[15em]  rounded-xl absolute"
+                style={{
+                  backgroundImage: `url('${'/images/terminal.png'}')`,
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                }}
+              />
+              <div
+                className="w-[24em] h-[15em] rounded-xl absolute top-[9.2em] left-[6em]"
+                style={{
+                  backgroundImage: `url('${'/images/browser.png'}')`,
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                }}
+              />
             </div>
           </div>
 
@@ -151,7 +168,7 @@ function App() {
               </p>
             </div>
 
-            <div className="flex justify-start mb-36">
+            <div className="flex justify-start">
               <RollbackCard
                 progressValue={90}
                 branchName="jvjb4ynna"
@@ -161,6 +178,15 @@ function App() {
                 message="Update bento box design"
               />
             </div>
+            <div
+              className="flex justify-start h-36"
+              style={{
+                backgroundImage: `url('${'/images/rollback-arrow.png'}')`,
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+              }}
+            />
             <div className="flex justify-end">
               <RollbackCard
                 strokeColor="#ef4444"
@@ -176,69 +202,22 @@ function App() {
 
           <div className="flex-1  text-white p-14">
             <SectionHeader
-              title="Collaborative pre-production"
+              title="Conformance"
               icon={<BiMessageRounded size={20} />}
             />
 
             <div className="mb-10">
               <p className="text-2xl font-bold text-white">
-                Every deploy is remarkable.{' '}
+                Move fast, don’t break things.{' '}
                 <span className="text-2xl font-bold text-white/50">
-                  Chat with your team on real, production-grade UI, not just
-                  designs.
+                  Keep quality high while maintaining velocity with Enterprise
+                  Monorepos.
                 </span>
               </p>
             </div>
 
             <div className="flex flex-col gap-y-6">
-              <div className="flex  justify-start">
-                <CommentCard
-                  message={
-                    <p>
-                      Swipped out the{' '}
-                      <span className="bg-white/10 px-[5px] py-[2px] rounded-md">
-                        button
-                      </span>{' '}
-                      for some variant we needed.
-                    </p>
-                  }
-                />
-              </div>
-
-              <div className="flex items-end gap-x-8 justify-end">
-                <CommentCardPointer direction="right" label="Pranati" />
-                <CommentCard message={<p>How about this instead?</p>} />
-              </div>
-
-              <div className="flex items-end gap-x-14 justify-start">
-                <CommentCard
-                  message={
-                    <p>
-                      I like it. This works with the brand tweaks{' '}
-                      <span className="font-medium">@mamuso</span>
-                    </p>
-                  }
-                />
-                <CommentCardPointer
-                  direction="left"
-                  label="Rauno"
-                  color="#ef4444"
-                />
-              </div>
-
-              <div className="flex items-end justify-end relative">
-                <CommentCard
-                  message={<p>This looks great</p>}
-                  variant="input"
-                />
-                <div className="absolute -right-8">
-                  <CommentCardPointer
-                    direction="left"
-                    label="Rauno"
-                    hideLabel
-                  />
-                </div>
-              </div>
+              <ConformanceCodeownersContainer />
             </div>
           </div>
         </div>

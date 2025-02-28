@@ -3,13 +3,15 @@ type Props = {
   size?: number;
   strokeWidth?: number;
   color?: string;
+  showValueInChart?: boolean;
 };
 
 const CircularProgress = ({
   size = 45,
   percentage = 90,
-  strokeWidth = 5,
+  strokeWidth = 4,
   color = '#00A99D',
+  showValueInChart = true,
 }: Props) => {
   const center = size / 2;
   const radius = center - strokeWidth / 2;
@@ -45,7 +47,9 @@ const CircularProgress = ({
         </svg>
 
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-lg font-bold">{percentage}</span>
+          {showValueInChart && (
+            <span className="text-white text-lg font-bold">{percentage}</span>
+          )}
         </div>
       </div>
     </div>

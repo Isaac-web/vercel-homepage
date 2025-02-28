@@ -1,3 +1,5 @@
+import Triangle from './triangle';
+
 const HeroSection = () => {
   return (
     <div className=" h-screen flex flex-col justify-center items-center gap-y-10">
@@ -18,7 +20,9 @@ const HeroSection = () => {
             Get A Demo
           </button>
         </div>
-        <div className="w-60 h-60 bg-gray-600"></div>
+        <div className="w-60 h-60 bg-gray-600">
+          <Triangle />
+        </div>
       </div>
     </div>
   );
