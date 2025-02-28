@@ -3,6 +3,8 @@ import HeroSection from './components/HeroSection';
 import { FaTerminal } from 'react-icons/fa';
 import CommentCard from './components/CommentCard';
 import { CommentCardPointer } from './components/CommentCardPointer';
+import { BiMessageRounded } from 'react-icons/bi';
+import SectionHeader from './components/section-header';
 
 function App() {
   return (
@@ -22,10 +24,10 @@ function App() {
         </div>
         <div className="flex  flex-col lg:flex-row  border-t-2 border-gray-300/10">
           <div className="flex-1 border-r-2 border-gray-300/10 p-14">
-            <div className="flex flex-row items-center gap-x-2 text-white/70 mb-5">
-              <FaTerminal size={20} />
-              <p className="text-lg">Git-connected Deploys</p>
-            </div>
+            <SectionHeader
+              title="Git-connected Deploys"
+              icon={<FaTerminal size={20} />}
+            />
 
             <div className="mb-10">
               <p className="text-2xl font-bold text-white">
@@ -40,10 +42,10 @@ function App() {
           </div>
 
           <div className="flex-1  text-white p-14">
-            <div className="flex flex-row items-center gap-x-2 text-white/70 mb-5">
-              <FaTerminal size={20} />
-              <p className="text-lg">Collaborative pre-production</p>
-            </div>
+            <SectionHeader
+              title="Collaborative pre-production"
+              icon={<BiMessageRounded size={20} />}
+            />
 
             <div className="mb-10">
               <p className="text-2xl font-bold text-white">
