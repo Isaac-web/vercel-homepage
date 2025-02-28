@@ -3,7 +3,7 @@ import HeroSection from './components/HeroSection';
 import { FaTerminal } from 'react-icons/fa';
 import CommentCard from './components/CommentCard';
 import { CommentCardPointer } from './components/CommentCardPointer';
-import { BiMessageRounded } from 'react-icons/bi';
+import { BiBookBookmark, BiMessageRounded } from 'react-icons/bi';
 import SectionHeader from './components/section-header';
 import { AiOutlineLineChart } from 'react-icons/ai';
 import { TbReload } from 'react-icons/tb';
@@ -203,7 +203,7 @@ function App() {
           <div className="flex-1  text-white p-14">
             <SectionHeader
               title="Conformance"
-              icon={<BiMessageRounded size={20} />}
+              icon={<BiBookBookmark size={20} />}
             />
 
             <div className="mb-10">
