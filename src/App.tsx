@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="bg-black">
       <Navbar />
+      <div className="container max-w-6xl mx-auto pt-32">
+        <HeroSection />
+      </div>
     </div>
   );
 }
