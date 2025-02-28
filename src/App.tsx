@@ -10,6 +10,7 @@ import { TbReload } from 'react-icons/tb';
 import RollbackCard from './components/rollback-card';
 import ConformanceCodeownersContainer from './components/conformance-codeowners-container';
 import { ExpandYourEntrepriseSection } from './components/expand-your-entreprise-section';
+import DeployOnceDeliverEverywhereSection from './components/deploy-once-deliver-everywhere-section';
 
 function App() {
   return (
@@ -223,9 +224,8 @@ function App() {
           </div>
         </div>
 
-        <div>
-          <ExpandYourEntrepriseSection />
-        </div>
+        <ExpandYourEntrepriseSection />
+        <DeployOnceDeliverEverywhereSection />
       </div>
     </div>
   );

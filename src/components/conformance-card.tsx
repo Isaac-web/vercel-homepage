@@ -21,7 +21,7 @@ export const ConformanceCard = ({
       <div className="flex gap-x-2 items-center px-2">
         {showProgress && (
           <CircularProgress
-            percentage={progressValue}
+            percentage={90}
             size={30}
             showValueInChart={false}
           />
