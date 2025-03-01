@@ -40,8 +40,8 @@ const codeOwners = [
 
 const ConformanceCodeownersContainer = () => {
   return (
-    <div className="bg-gradient-to-b from-white/15 to-transparent rounded-2xl flex flex-col sm:flex-row p-px space-y-[1px] sm:space-y-0 sm:space-x-[1px]">
-      <div className="flex-1 w-1/2 flex flex-col gap-y-2 bg-black rounded-t-2xl sm:rounded-l-2xl sm:rounded-tr-none p-3 sm:p-4 bg-gradient-to-b from-white/5 to-transparent">
+    <div className="bg-gradient-to-b from-white/15 to-transparent rounded-2xl flex flex-col gap-y-2 lg:gap-y-4  sm:flex-row p-px space-y-[1px] sm:space-y-0 sm:space-x-[1px]">
+      <div className="flex-1 w-full lg:w-1/2 flex flex-col gap-y-2 bg-black rounded-t-2xl sm:rounded-l-2xl sm:rounded-tr-none p-3 sm:p-4 bg-gradient-to-b from-white/5 to-transparent">
         <div className="py-1 sm:py-2">
           <p className="font-medium text-white/90 text-sm sm:text-base">
             Conformance
@@ -58,7 +58,7 @@ const ConformanceCodeownersContainer = () => {
           />
         ))}
       </div>
-      <div className="flex-1 w-1/2 flex flex-col gap-y-2 bg-black rounded-b-2xl sm:rounded-r-2xl sm:rounded-bl-none p-3 sm:p-4 bg-gradient-to-b from-white/5 to-transparent">
+      <div className="flex-1 w-full lg:w-1/2 flex flex-col gap-y-2 bg-black rounded-b-2xl sm:rounded-r-2xl sm:rounded-bl-none p-3 sm:p-4 bg-gradient-to-b from-white/5 to-transparent">
         <div className="py-1 sm:py-2">
           <p className="font-medium text-white/90 text-sm sm:text-base">
             Code Owners
