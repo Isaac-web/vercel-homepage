@@ -4,6 +4,7 @@
 
 
 [Link to deployed website]([https://example.com](https://vercel-homepage-challenge.vercel.app/))
+![vercel-homepage](https://github.com/user-attachments/assets/36235bac-ba46-4a76-8c9d-68e6c49eb8c3)
 
 This project is a **replication of the Vercel.com homepage**, built to closely match the **design, layout, and interactive elements** of the live site. The goal was to **recreate the experience** as accurately as possible using modern web technologies.
 
@@ -33,7 +34,7 @@ Ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (LTS recommended)
 - [Yarn](https://yarnpkg.com/) or npm
 
-![vercel-homepage](https://github.com/user-attachments/assets/36235bac-ba46-4a76-8c9d-68e6c49eb8c3)
+
 
 
 ### **Installation & Setup**
