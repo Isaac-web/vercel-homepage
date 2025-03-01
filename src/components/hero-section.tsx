@@ -1,3 +1,4 @@
+import Pyramid from './triangle';
 import Triangle from './triangle';
 
 const HeroSection = () => {
@@ -21,7 +22,7 @@ const HeroSection = () => {
           </button>
         </div>
         <div className="w-60 h-60 bg-gray-600">
-          <Triangle />
+          <Pyramid />
         </div>
       </div>
     </div>

@@ -12,6 +12,9 @@ import ConformanceCodeownersContainer from './components/conformance-codeowners-
 import { ExpandYourEntrepriseSection } from './components/expand-your-entreprise-section';
 import DeployOnceDeliverEverywhereSection from './components/deploy-once-deliver-everywhere-section';
 import FrameworksSection from './components/frameworks-section';
+import ReliabilitySection from './components/reliability-section';
+import { DeployYourFirstAppSection } from './components/deploy-your-first-app-section';
+import { CallToAction } from './components/call-to-action';
 
 function App() {
   return (
@@ -228,6 +231,9 @@ function App() {
         <ExpandYourEntrepriseSection />
         <DeployOnceDeliverEverywhereSection />
         <FrameworksSection />
+        <ReliabilitySection />
+        <DeployYourFirstAppSection />
+        <CallToAction />
       </div>
     </div>
   );

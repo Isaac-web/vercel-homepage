@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <header className="w-full flex justify-center items-center bg-black fixed top-0">
+    <header className="w-full flex justify-center items-center bg-black fixed top-0 z-50">
       <nav className="h-[75px] flex flex-row justify-between items-center container max-w-7xl">
         <div className="text-white flex justify-center gap-4">
           <h3>Vercel</h3>

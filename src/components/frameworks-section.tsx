@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { framworks } from '../contants/data';
-import { FrameworkCard } from './framework-card';
 import { Framework } from '..';
 import { motion } from 'framer-motion';
+import { FrameworkTile } from './framework-tile';
 
 const FrameworksSection = () => {
   const [animate, setAnimate] = useState(false);
@@ -48,7 +48,7 @@ const FrameworksSection = () => {
           </h4>
         </div>
         {framworks.map((f) => (
-          <FrameworkCard
+          <FrameworkTile
             framework={f}
             onCapture={(value) => {
               setAnimate(false);
