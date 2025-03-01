@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 const AnimatedText = ({ text, color }: { text: string; color?: string }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [_isHovered, setIsHovered] = useState(false);
   const [animateDirection, setAnimateDirection] = useState('down');
 
   console.log(animateDirection);
