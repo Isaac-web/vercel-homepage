@@ -19,11 +19,11 @@ const Typewriter = () => {
           () => setStage('push'),
           'git push',
           1000,
-          () => setStage('deployed'),
+          () => setStage('deploying'),
           'building...',
           2000,
-          () => setStage('deploying'),
-          'deployed 🍾',
+          () => setStage('deployed'),
+          'deployed',
           2000,
           () => {
             console.log('Sequence completed');

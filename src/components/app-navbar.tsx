@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { menuData } from '../contants/navbar-data';
 import NavbarListItem from './navbar-list-item';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 export const Navbar = () => {
+  const [scrollY, setScrollY] = useState(0);
   const [menuIndex, setMenuIndex] = useState(0);
   const [activeLink, setActiveLink] = useState<number | undefined>(undefined);
   const [isMenuHovered, setIsMenuHovered] = useState(false);
@@ -13,8 +14,23 @@ export const Navbar = () => {
 
   const showMenu = isMenuHovered || isNavHovered;
 
+  const handleSetScrollY = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleSetScrollY);
+    return () => {
+      window.removeEventListener('scroll', handleSetScrollY);
+    };
+  }, []);
+
   return (
-    <header className="w-full flex justify-center items-center bg-black fixed top-0 z-50">
+    <header
+      className={`w-full flex justify-center items-center bg-black fixed top-0 z-50 ${
+        scrollY > 100 ? 'border-b border-gray-300/20' : ''
+      }`}
+    >
       <nav className="h-[75px] flex flex-row justify-between items-center container max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center text-white justify-center gap-4">
           <div>
