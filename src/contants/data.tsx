@@ -1,5 +1,8 @@
 import { PiScales } from 'react-icons/pi';
-import { Framework } from '..';
+import { FooterDataType, Framework } from '../types';
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { FiExternalLink } from 'react-icons/fi';
 
 export const framworks: Framework[] = [
   {
@@ -103,5 +106,84 @@ export const deployYourAppSectionData = [
   {
     message: 'Preview for every push.',
     imagesUris: ['github'],
+  },
+];
+
+export const footerData: FooterDataType[] = [
+  {
+    title: 'Products',
+    links: [
+      { label: 'AI', href: '#' },
+      { label: 'Enterprise', href: '#' },
+      { label: 'Fluid Compute', href: '#' },
+      { label: 'Next.js', href: '#' },
+      { label: 'Observability', href: '#' },
+      { label: 'Previews', href: '#' },
+      { label: 'Rendering', href: '#' },
+      { label: 'Security', href: '#' },
+      { label: 'Turbo', href: '#' },
+      {
+        label: 'v0',
+        href: '#',
+        icon: <FiExternalLink />,
+        iconPosition: 'right',
+      },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      {
+        label: 'Community',
+        href: '#',
+        icon: <FiExternalLink />,
+        iconPosition: 'right',
+      },
+      { label: 'Docs', href: '#' },
+      { label: 'Guides', href: '#' },
+      { label: 'Help', href: '#' },
+      { label: 'Integrations', href: '#' },
+      { label: 'Pricing', href: '#' },
+      { label: 'Resources', href: '#' },
+      { label: 'Solution Partners', href: '#' },
+      { label: 'Templates', href: '#' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: '	About', href: '#' },
+      { label: 'Blog', href: '#' },
+      { label: 'Careers', href: '#' },
+      { label: 'Changelog', href: '#' },
+      { label: 'Contact Us', href: '#' },
+      { label: 'Customers', href: '#' },
+      { label: 'Partners', href: '#' },
+      { label: 'Privacy Policy', href: '#' },
+    ],
+  },
+  {
+    title: 'Social',
+    links: [
+      { label: 'GitHub', href: '#', icon: <FaGithub />, iconPosition: 'left' },
+      {
+        label: 'LinkedIn',
+        href: '#',
+        icon: <FaLinkedin />,
+        iconPosition: 'left',
+      },
+      {
+        label: 'Twitter',
+        href: '#',
+        icon: <FaXTwitter />,
+        iconPosition: 'left',
+      },
+      {
+        label: 'YouTube',
+        href: '#',
+        icon: <FaYoutube />,
+        iconPosition: 'left',
+      },
+    ],
   },
 ];

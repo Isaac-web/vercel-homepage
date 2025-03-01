@@ -15,6 +15,7 @@ import FrameworksSection from './components/frameworks-section';
 import ReliabilitySection from './components/reliability-section';
 import { DeployYourFirstAppSection } from './components/deploy-your-first-app-section';
 import { CallToAction } from './components/call-to-action';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -235,6 +236,7 @@ function App() {
         <DeployYourFirstAppSection />
         <CallToAction />
       </div>
+      <Footer />
     </div>
   );
 }

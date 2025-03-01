@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Framework } from '..';
+import { Framework } from '../types';
 
 type Props = {
   framework: Framework;

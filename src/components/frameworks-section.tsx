@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { framworks } from '../contants/data';
-import { Framework } from '..';
+import { Framework } from '../types';
 import { motion } from 'framer-motion';
 import { FrameworkTile } from './framework-tile';
 
