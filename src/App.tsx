@@ -1,4 +1,4 @@
-// import Navbar from './components/navbar';
+import Navbar from './components/navbar';
 import HeroSection from './components/hero-section';
 import { FaTerminal } from 'react-icons/fa';
 import CommentCard from './components/comment-card';
@@ -21,7 +21,7 @@ import AnalyticsChart from './components/AnalyticsChart';
 function App() {
   return (
     <div className="bg-black pt-20 sm:pt-32 h-auto">
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="container mx-auto px-4 sm:px-6 lg:max-w-6xl pb-10 sm:pb-20 border-2 border-gray-300/10">
         <div className="border-b-2 border-gray-300/10 mb-3 sm:mb-5">
           <HeroSection />
