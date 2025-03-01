@@ -88,7 +88,7 @@ export const Navbar = () => {
         </button>
 
         <AnimatePresence>
-          {showMenu && (
+          {showMenu && menuData[menuIndex].menu?.length && (
             <motion.div
               className="absolute top-[70px] text-white p-3 rounded-lg border border-gray-300/20 bg-black shadow-md pb-8 hidden lg:block"
               initial={{ opacity: 0, y: -10 }}

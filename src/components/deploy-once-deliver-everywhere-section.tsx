@@ -37,10 +37,10 @@ export const DeployOnceDeliverEverywhereSection = () => {
           </button>
         </div>
       </div>
-      <div className="h-screen w-full bg-gray-800/20 -pl-20 overflow-hidden flex flex-col justify-center items-center">
+      <div className="h-[24em] lg:h-screen w-full bg-gray-800/20 -pl-20 overflow-hidden flex flex-col justify-center items-center">
         <img
           src={'/images/world-map.svg'}
-          className="text-white w-full h-full opacity-20"
+          className="text-white w-full h-1/2 lg:h-full opacity-20"
         />
 
         <Typewriter />
