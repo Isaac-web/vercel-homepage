@@ -17,7 +17,7 @@ const FrameworksSection = () => {
   return (
     <section className="w-full">
       <div className="w-full grid grid-cols-6 bg-white/10 gap-[1px] text-white py-[1px]">
-        <div className="col-span-2 h-[11em] bg-black p-10">
+        <div className="col-span-6 lg:col-span-2 h-[11em] bg-black p-4 lg:p-10">
           <h4 className="text-3xl font-semibold">
             Your{' '}
             {currentFramework ? (

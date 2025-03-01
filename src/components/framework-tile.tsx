@@ -29,7 +29,7 @@ export const FrameworkTile = ({ framework, onCapture }: Props) => {
 
   return (
     <div
-      className="col-span-1 h-[7.32em] bg-black flex justify-center items-center text-2xl font-semibold"
+      className="col-span-3 lg:col-span-1 h-[7.32em] bg-black flex justify-center items-center text-2xl font-semibold"
       ref={ref}
     >
       {framework.name}

@@ -1,69 +1,24 @@
-import { motion } from 'framer-motion';
+const Triangle = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+      <rect x="0" y="0" width="450" height="450" fill="transparent" />
+
+      <polygon
+        points="200,50 350,350 50,350"
+        fill="transparent"
+        stroke="black"
+        stroke-width="1"
+      />
+    </svg>
+  );
+};
 
 const Pyramid = () => {
   return (
-    <div className="w-full h-[400px] flex items-center justify-center">
-      <motion.svg
-        viewBox="0 0 200 200"
-        className="w-full max-w-[400px]"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        {/* Front face */}
-        <motion.polygon
-          points="100,20 40,160 160,160"
-          fill="#333"
-          stroke="rgba(255,255,255,0.2)"
-          strokeWidth="1"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-        />
-
-        {/* Left face */}
-        <motion.polygon
-          points="40,160 100,20 100,160"
-          fill="#222"
-          stroke="rgba(255,255,255,0.2)"
-          strokeWidth="1"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        />
-
-        {/* Right face */}
-        <motion.polygon
-          points="100,20 160,160 100,160"
-          fill="#444"
-          stroke="rgba(255,255,255,0.2)"
-          strokeWidth="1"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-        />
-
-        {/* Optional: Add gradient overlay */}
-        <defs>
-          <linearGradient
-            id="pyramidGradient"
-            x1="0%"
-            y1="0%"
-            x2="100%"
-            y2="100%"
-          >
-            <stop
-              offset="0%"
-              style={{ stopColor: '#ffffff', stopOpacity: 0.1 }}
-            />
-            <stop
-              offset="100%"
-              style={{ stopColor: '#000000', stopOpacity: 0.1 }}
-            />
-          </linearGradient>
-        </defs>
-      </motion.svg>
-    </div>
+    <polygon
+      fill="var(--geist-background)"
+      points="485,650.3952809568069 715,650.3952809568069 600,451.20943808638606"
+    ></polygon>
   );
 };
 

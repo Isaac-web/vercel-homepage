@@ -27,7 +27,7 @@ export const DeployOnceDeliverEverywhereSection = () => {
           </span>
         </p>
 
-        <div className="flex justify-center gap-x-2">
+        <div className="flex flex-col lg:flex-row gap-y-2 justify-center gap-x-2">
           <button className="border border-white/50 font-semibold text-black px-5 py-3 rounded-full bg-white/90  text-lg">
             Learn about infrastructure
           </button>
@@ -39,7 +39,7 @@ export const DeployOnceDeliverEverywhereSection = () => {
       <div className="h-screen w-full bg-gray-800/20"></div>
 
       <div className="grid grid-cols-3 gap-4">
-        <div className="col-span-3 lg:col-span-2 p-12 flex flex-col gap-y-8">
+        <div className="col-span-3 lg:col-span-2 py-4 px-2 lg:p-12 flex flex-col gap-y-8">
           <CodeSnippet filename="app/users/page.tsx" codeString={codeString} />
           <div>
             <h4 className="text-xl text-white font-semibold">

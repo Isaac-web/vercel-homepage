@@ -5,7 +5,7 @@ export const DeployYourFirstAppSection = () => {
   return (
     <section className="text-white py-10">
       <div className="w-full grid grid-cols-3 gap-x-2 lg:gap-x-4">
-        <div className="col-span-3 lg:col-span-1 px-10">
+        <div className="col-span-3 lg:col-span-1 px-4 lg:px-10">
           <h3 className="mb-5 text-4xl font-semibold">
             Deploy your first app in seconds.
           </h3>
@@ -30,7 +30,7 @@ export const DeployYourFirstAppSection = () => {
           </div>
         </div>
 
-        <div className="col-span-3 lg:col-span-2 px-4">
+        <div className="col-span-3 lg:col-span-2 px-4 mt-10 lg:mt-0">
           <div className="grid grid-cols-2 gap-4 lg:gap-x-7">
             {framworks.slice(0, 8).map((f) => (
               <FrameworkCard framework={f} />

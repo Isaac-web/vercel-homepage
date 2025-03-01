@@ -16,43 +16,44 @@ import ReliabilitySection from './components/reliability-section';
 import { DeployYourFirstAppSection } from './components/deploy-your-first-app-section';
 import { CallToAction } from './components/call-to-action';
 import Footer from './components/footer';
+import AnalyticsChart from './components/AnalyticsChart';
 
 function App() {
   return (
-    <div className="bg-black pt-32 h-auto">
+    <div className="bg-black pt-20 sm:pt-32 h-auto">
       <Navbar />
-      <div className="container max-w-6xl mx-auto pb-20 border-2 border-gray-300/10">
-        <div className="border-b-2 border-gray-300/10 mb-5">
+      <div className="container mx-auto px-4 sm:px-6 lg:max-w-6xl pb-10 sm:pb-20 border-2 border-gray-300/10">
+        <div className="border-b-2 border-gray-300/10 mb-3 sm:mb-5">
           <HeroSection />
         </div>
-        <div className="flex flex-col justify-center items-center py-20 border-t-2 border-gray-300/10">
-          <h3 className="font-bold text-4xl text-white">
+        <div className="flex flex-col justify-center items-center py-10 sm:py-20 border-t-2 border-gray-300/10">
+          <h3 className="font-bold text-2xl sm:text-4xl text-white text-center px-4">
             Develop with your favorite tools
           </h3>
-          <h3 className="font-bold text-4xl text-white">
+          <h3 className="font-bold text-2xl sm:text-4xl text-white text-center px-4">
             Launch globally, instantly Keep pushing
           </h3>
         </div>
 
-        <div className="flex  flex-col lg:flex-row  border-t-2 border-gray-300/10">
-          <div className="flex-1 border-r-2 border-gray-300/10 p-14">
+        <div className="flex flex-col lg:flex-row border-t-2 border-gray-300/10">
+          <div className="flex-1 lg:border-r-2 border-gray-300/10 p-6 sm:p-14">
             <SectionHeader
               title="Git-connected Deploys"
               icon={<FaTerminal size={20} />}
             />
 
-            <div className="mb-12">
-              <p className="text-2xl font-bold text-white">
+            <div className="mb-8 sm:mb-12">
+              <p className="text-xl sm:text-2xl font-bold text-white">
                 From localhost to https, in seconds.
               </p>
-              <p className="text-2xl font-bold text-white/50">
+              <p className="text-xl sm:text-2xl font-bold text-white/50">
                 Deploy from Git or your CLI.
               </p>
             </div>
 
-            <div className="w-full relative">
+            <div className="w-full relative hidden sm:block">
               <div
-                className="w-[24em] h-[15em]  rounded-xl absolute"
+                className="w-[18em] sm:w-[24em] h-[12em] sm:h-[15em] rounded-xl absolute"
                 style={{
                   backgroundImage: `url('${'/images/terminal.png'}')`,
                   backgroundSize: 'contain',
@@ -61,7 +62,7 @@ function App() {
                 }}
               />
               <div
-                className="w-[24em] h-[15em] rounded-xl absolute top-[9.2em] left-[6em]"
+                className="w-[18em] sm:w-[24em] h-[12em] sm:h-[15em] rounded-xl absolute top-[7em] sm:top-[9.2em] left-[4em] sm:left-[6em]"
                 style={{
                   backgroundImage: `url('${'/images/browser.png'}')`,
                   backgroundSize: 'contain',
@@ -72,23 +73,23 @@ function App() {
             </div>
           </div>
 
-          <div className="flex-1  text-white p-14">
+          <div className="flex-1 text-white p-6 sm:p-14">
             <SectionHeader
               title="Collaborative pre-production"
               icon={<BiMessageRounded size={20} />}
             />
 
-            <div className="mb-10">
-              <p className="text-2xl font-bold text-white">
+            <div className="mb-6 sm:mb-10">
+              <p className="text-xl sm:text-2xl font-bold text-white">
                 Every deploy is remarkable.{' '}
-                <span className="text-2xl font-bold text-white/50">
+                <span className="text-xl sm:text-2xl font-bold text-white/50">
                   Chat with your team on real, production-grade UI, not just
                   designs.
                 </span>
               </p>
             </div>
 
-            <div className="flex flex-col gap-y-6">
+            <div className="flex flex-col gap-y-4 sm:gap-y-6">
               <div className="flex  justify-start">
                 <CommentCard
                   message={
@@ -141,36 +142,40 @@ function App() {
           </div>
         </div>
 
-        <div className="border-t-2 border-gray-300/10 relative h-[30em]">
-          <div className="p-10">
+        <div className="border-t-2 border-gray-300/10 relative h-[20em] sm:h-[30em] mb-6 sm:mb-10">
+          <div className="p-6 sm:p-10">
             <SectionHeader
               title="Frontend Observability"
               icon={<AiOutlineLineChart size={24} />}
             />
-            <div className="mb-10 max-w-[40em]">
-              <p className="text-2xl font-bold text-white">
+            <div className="mb-6 sm:mb-10 w-full relative">
+              <p className="text-xl sm:text-2xl font-bold text-white z-20 absolute bg-black">
                 Privacy-friendly, lightweight Analytics. <br />
-                <span className="text-2xl font-bold text-white/50">
+                <span className="text-xl sm:text-2xl font-bold text-white/50">
                   Upgrade your post launch workflow with actionable, realtime
                   insights.
                 </span>
               </p>
+
+              <div className="text-white absolute w-full -top-5 -left-[1em]">
+                <AnalyticsChart />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex  flex-col lg:flex-row  border-t-2 border-gray-300/10">
-          <div className="flex-1 border-r-2 border-gray-300/10 p-14">
+        <div className="flex flex-col lg:flex-row border-t-2 border-gray-300/10">
+          <div className="flex-1 lg:border-r-2 border-gray-300/10 p-6 sm:p-14">
             <SectionHeader
               title="Instant Rollbacks"
               icon={<TbReload size={20} className="scale-x-[-1]" />}
             />
 
-            <div className="mb-12">
-              <p className="text-2xl font-bold text-white">
+            <div className="mb-8 sm:mb-12">
+              <p className="text-xl sm:text-2xl font-bold text-white">
                 Go ahead and deploy on Friday.
               </p>
-              <p className="text-2xl font-bold text-white/50">
+              <p className="text-xl sm:text-2xl font-bold text-white/50">
                 Instantly rollback to a working deployment.
               </p>
             </div>
@@ -207,16 +212,16 @@ function App() {
             </div>
           </div>
 
-          <div className="flex-1  text-white p-14">
+          <div className="flex-1 text-white p-6 sm:p-14">
             <SectionHeader
               title="Conformance"
               icon={<BiBookBookmark size={20} />}
             />
 
-            <div className="mb-10">
-              <p className="text-2xl font-bold text-white">
-                Move fast, don’t break things.{' '}
-                <span className="text-2xl font-bold text-white/50">
+            <div className="mb-6 sm:mb-10">
+              <p className="text-xl sm:text-2xl font-bold text-white">
+                Move fast, don't break things.{' '}
+                <span className="text-xl sm:text-2xl font-bold text-white/50">
                   Keep quality high while maintaining velocity with Enterprise
                   Monorepos.
                 </span>

@@ -1,8 +1,6 @@
 import { AiOutlineEye, AiOutlineRobot } from 'react-icons/ai';
-import { BiBookOpen, BiNetworkChart, BiNews } from 'react-icons/bi';
+import { BiNetworkChart } from 'react-icons/bi';
 import { FaReact } from 'react-icons/fa';
-import { FiGlobe, FiPackage } from 'react-icons/fi';
-import { HiOutlineUsers } from 'react-icons/hi';
 import { LuWorkflow } from 'react-icons/lu';
 import {
   MdCampaign,
@@ -14,14 +12,7 @@ import {
 } from 'react-icons/md';
 import { PiBuildingsBold } from 'react-icons/pi';
 import { RiServerLine } from 'react-icons/ri';
-import {
-  TbBuildingStore,
-  TbFileReport,
-  TbServerBolt,
-  TbStack3,
-  TbTemplate,
-  TbTools,
-} from 'react-icons/tb';
+import { TbServerBolt, TbStack3 } from 'react-icons/tb';
 
 export const products = [
   {
@@ -200,71 +191,6 @@ export const resources = [
             icon: <MdOutlineEngineering />,
             title: 'Design Engineers',
             subtitle: 'Deploy for every idea',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: 'Tools',
-    sections: [
-      {
-        title: '',
-        menuItems: [
-          {
-            icon: <TbTools />,
-            title: 'Resource Center',
-            subtitle: "Today's best practices",
-          },
-          {
-            icon: <FiPackage />,
-            title: 'Marketplace',
-            subtitle: 'Extend and automate workflows',
-          },
-          {
-            icon: <TbTemplate />,
-            title: 'Templates',
-            subtitle: 'Jumpstart app development',
-          },
-          {
-            icon: <BiBookOpen />,
-            title: 'Guides',
-            subtitle: 'Find help quickly',
-          },
-          {
-            icon: <TbBuildingStore />,
-            title: 'Partner Finder',
-            subtitle: 'Get help from solution partners',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: 'Company',
-    sections: [
-      {
-        title: '',
-        menuItems: [
-          {
-            icon: <HiOutlineUsers />,
-            title: 'Customers',
-            subtitle: 'Trusted by the best teams',
-          },
-          {
-            icon: <FiGlobe />,
-            title: 'Blog',
-            subtitle: 'The latest posts and changes',
-          },
-          {
-            icon: <TbFileReport />,
-            title: 'Changelog',
-            subtitle: 'See what shipped',
-          },
-          {
-            icon: <BiNews />,
-            title: 'Press',
-            subtitle: 'Read the latest news',
           },
         ],
       },

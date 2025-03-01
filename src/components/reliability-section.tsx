@@ -3,8 +3,8 @@ import SectionHeader from './section-header';
 
 const ReliabilitySection = () => {
   return (
-    <section className="text-white py-20 px-20">
-      <h3 className="mb-32 text-4xl font-semibold">
+    <section className="text-white py-20 px-5 lg:px-20">
+      <h3 className="mb-14 lg:mb-32 text-4xl font-semibold">
         Reliabilty you can count on
       </h3>
 
