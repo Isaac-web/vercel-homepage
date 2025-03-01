@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { MdOutlineContentCopy } from 'react-icons/md';
 import { SiTypescript } from 'react-icons/si';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -9,6 +10,10 @@ type Props = {
 };
 
 export const CodeSnippet = ({ filename, codeString }: Props) => {
+  const copyButtonRef = useRef(null);
+
+  useEffect(() => {}, []);
+
   return (
     <div className="border border-gray-600/50 rounded-xl overflow-hidden">
       <div className="h-12 w-full flex flex-row items-center justify-between border-b border-gray-600/50 px-4">

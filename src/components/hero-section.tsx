@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <div className="relative h-screen flex flex-col justify-center items-center">
       <div className="absolute h-screen flex flex-col justify-center items-center gap-y-6 sm:gap-y-10 border-t border-t-white/10 bg-transparent z-10 pt-20 sm:pt-52 px-4 sm:px-6">
-        <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-white text-center">
+        <h1 className="font-bold text-5xl sm:text-4xl lg:text-5xl text-white text-center">
           Your complete platform for the web
         </h1>
         <p className="text-lg sm:text-xl lg:text-2xl text-white/50 text-center max-w-2xl px-4">

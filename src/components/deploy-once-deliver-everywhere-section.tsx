@@ -20,7 +20,7 @@ export const DeployOnceDeliverEverywhereSection = () => {
   return (
     <section className="border-t-2 border-gray-300/10 py-32">
       <div className="mb-10 flex flex-col gap-y-5">
-        <p className="text-2xl font-medium text-white text-center">
+        <p className="text-2xl font-medium text-white text-left lg:text-center mb-7 lg:mb-0">
           Deploy once, deliver everywhere.
           <span className="text-2xl text-white/50">
             When you push your code to vercel, we <br /> make it instantly
@@ -28,7 +28,7 @@ export const DeployOnceDeliverEverywhereSection = () => {
           </span>
         </p>
 
-        <div className="flex flex-col lg:flex-row gap-y-2 justify-center gap-x-2">
+        <div className="flex flex-col lg:flex-row  justify-center gap-x-2 gap-y-7 lg:gap-y-2">
           <button className="border border-white/50 font-semibold text-black px-5 py-3 rounded-full bg-white/90  text-lg">
             Learn about infrastructure
           </button>
