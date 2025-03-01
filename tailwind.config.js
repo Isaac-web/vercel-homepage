@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 20s linear infinite',
-        'spin-slow-reverse': 'spin-reverse 20s linear infinite',
+        'spin-slow': 'spin 10s linear infinite',
+        'spin-slow-reverse': 'spin-reverse 10s linear infinite',
       },
     },
   },

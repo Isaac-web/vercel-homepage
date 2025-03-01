@@ -53,13 +53,13 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex gap-x-3">
-          <button className="text-sm border border-white/20 font-semibold text-white px-5 py-1.5 rounded-lg bg-white/5">
+          <button className="text-sm border border-white/20 font-semibold text-white px-5 py-1.5 rounded-lg bg-white/5 hover:opacity-70 transition-all">
             Login
           </button>
-          <button className="text-sm border border-white/20 font-semibold text-white px-5 py-1.5 rounded-lg bg-white/5">
+          <button className="text-sm border border-white/20 font-semibold text-white px-5 py-1.5 rounded-lg bg-white/5 hover:opacity-70 transition-all">
             Contact
           </button>
-          <button className="text-sm border border-white/50 font-semibold text-black px-5 py-1.5 rounded-lg bg-white/90">
+          <button className="text-sm border border-white/50 font-semibold text-black px-5 py-1.5 rounded-lg bg-white/90 hover:opacity-70 transition-all">
             Sign Up
           </button>
         </div>
