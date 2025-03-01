@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Framework } from '../types';
 
 type Props = {
@@ -7,32 +7,29 @@ type Props = {
 };
 
 export const FrameworkTile = ({ framework, onCapture }: Props) => {
+  const [captured, setCaptured] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   const raiseFrameworkCaptured = () => {
     onCapture?.(framework);
+    setCaptured(true);
   };
 
   const raiseFrameworkBlured = () => {
+    setCaptured(false);
     onCapture?.(null);
   };
 
-  useEffect(() => {
-    ref.current?.addEventListener('mouseenter', raiseFrameworkCaptured);
-    ref.current?.addEventListener('mouseleave', raiseFrameworkBlured);
-
-    return () => {
-      ref.current?.removeEventListener('mouseenter', raiseFrameworkCaptured);
-      ref.current?.removeEventListener('mouseleave', raiseFrameworkBlured);
-    };
-  });
-
   return (
     <div
-      className="col-span-3 lg:col-span-1 h-[7.32em] bg-black flex justify-center items-center text-2xl font-semibold"
+      onMouseEnter={raiseFrameworkCaptured}
+      onMouseLeave={raiseFrameworkBlured}
+      className={`col-span-3 lg:col-span-1 h-[7.32em] bg-black flex justify-center items-center text-2xl font-semibold transition-all ${
+        captured ? 'grayscale-0' : 'grayscale'
+      }`}
       ref={ref}
     >
-      {framework.name}
+      <img className="w-12 h-12" src={framework.logo} />
     </div>
   );
 };

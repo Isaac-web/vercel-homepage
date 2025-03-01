@@ -1,4 +1,5 @@
 import { CodeSnippet } from './code-snippet';
+import Typewriter from './typewriter';
 
 export const DeployOnceDeliverEverywhereSection = () => {
   const codeString = `const default async function Page = () => {
@@ -36,11 +37,23 @@ export const DeployOnceDeliverEverywhereSection = () => {
           </button>
         </div>
       </div>
-      <div className="h-screen w-full bg-gray-800/20"></div>
+      <div className="h-screen w-full bg-gray-800/20 -pl-20 overflow-hidden flex flex-col justify-center items-center">
+        <img
+          src={'/images/world-map.svg'}
+          className="text-white w-full h-full opacity-20"
+        />
+
+        <Typewriter />
+      </div>
 
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-3 lg:col-span-2 py-4 px-2 lg:p-12 flex flex-col gap-y-8">
-          <CodeSnippet filename="app/users/page.tsx" codeString={codeString} />
+          <div className="shadow-xl">
+            <CodeSnippet
+              filename="app/users/page.tsx"
+              codeString={codeString}
+            />
+          </div>
           <div>
             <h4 className="text-xl text-white font-semibold">
               Bringing the best of Client and Server Rendering.
@@ -57,8 +70,11 @@ export const DeployOnceDeliverEverywhereSection = () => {
         </div>
 
         <div className="col-span-3 lg:col-span-1">
-          <div className="w-full h-[30em] bg-gray-100/10">
-            <img src={''} />
+          <div className="w-full h-[30em]">
+            <img
+              src={'/images/world-map.svg'}
+              className="text-white w-full h-full"
+            />
           </div>
 
           <div className="py-7 px-4">

@@ -7,52 +7,52 @@ import { FiExternalLink } from 'react-icons/fi';
 export const framworks: Framework[] = [
   {
     name: 'Next.js',
-    logo: '',
+    logo: '/images/frameworks/next-js.svg',
     color: '#FFFFFF',
   },
   {
     name: 'React',
-    logo: '',
+    logo: '/images/frameworks/react-svgrepo-com.svg',
     color: '#61DAFB',
   },
   {
     name: 'Nuxt',
-    logo: '',
+    logo: '/images/frameworks/nuxt-svgrepo-com.svg',
     color: '#00DC82',
   },
   {
     name: 'Svelte',
-    logo: '',
+    logo: '/images/frameworks/svelte-svgrepo-com.svg',
     color: '#FF3E00',
   },
   {
     name: 'Vue',
-    logo: '',
+    logo: '/images/frameworks/vue-svgrepo-com.svg',
     color: '#42b883',
   },
   {
     name: 'Gatsby',
-    logo: '',
+    logo: '/images/frameworks/gatsby-svgrepo-com.svg',
     color: '#663399',
   },
   {
     name: 'Astro',
-    logo: '',
+    logo: '/images/frameworks/astro-svgrepo-com.svg',
     color: '#FF5D01',
   },
   {
     name: 'Python',
-    logo: '',
+    logo: '/images/frameworks/python-svgrepo-com.svg',
     color: '#3776AB',
   },
   {
     name: 'Angular',
-    logo: '',
+    logo: '/images/frameworks/angular-icon-svgrepo-com.svg',
     color: '#DD0031',
   },
   {
     name: 'Vite',
-    logo: '',
+    logo: '/images/frameworks/vite-svgrepo-com.svg',
     color: '#646CFF',
   },
 ];

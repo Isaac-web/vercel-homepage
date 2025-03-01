@@ -27,7 +27,7 @@ const FrameworksSection = () => {
                 animate={{ opacity: 1, y: 0, skew: 0 }}
                 exit={{ opacity: 0, y: 20, skew: 10 }}
                 transition={{ duration: 0.5, type: 'spring', bounce: 0.2 }}
-                className="inline-block font-semibold"
+                className="inline-block font-semibold shadow-green-300"
                 style={{ color: currentFramework?.color }}
               >
                 {currentFramework.name},
