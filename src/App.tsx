@@ -1,9 +1,4 @@
 import HeroSection from './components/hero-section';
-import { FaTerminal } from 'react-icons/fa';
-import CommentCard from './components/comment-card';
-import { CommentCardPointer } from './components/comment-card-pointer';
-import { BiMessageRounded } from 'react-icons/bi';
-import SectionHeader from './components/section-header';
 import { ExpandYourEntrepriseSection } from './components/expand-your-entreprise-section';
 import DeployOnceDeliverEverywhereSection from './components/deploy-once-deliver-everywhere-section';
 import FrameworksSection from './components/frameworks-section';
