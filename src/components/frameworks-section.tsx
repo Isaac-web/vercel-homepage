@@ -28,7 +28,10 @@ const FrameworksSection = () => {
                 exit={{ opacity: 0, y: 20, skew: 10 }}
                 transition={{ duration: 0.5, type: 'spring', bounce: 0.2 }}
                 className="inline-block font-semibold shadow-green-300"
-                style={{ color: currentFramework?.color }}
+                style={{
+                  color: currentFramework?.color,
+                  textShadow: `0px 1px 5px ${currentFramework.color}`,
+                }}
               >
                 {currentFramework.name},
               </motion.span>
