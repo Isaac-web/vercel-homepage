@@ -1,4 +1,5 @@
 import { BiSolidPointer } from 'react-icons/bi';
+import { motion } from 'framer-motion';
 
 type Props = {
   label: string;
@@ -16,7 +17,19 @@ export const CommentCardPointer = ({
   textColor = '#000000',
 }: Props) => {
   return (
-    <div className="relative">
+    <motion.div
+      className="relative"
+      animate={{
+        y: [0, -10, 0],
+        scale: [1, 1.05, 1],
+      }}
+      transition={{
+        duration: 2,
+        repeat: Infinity,
+        repeatType: 'reverse',
+        ease: 'easeInOut',
+      }}
+    >
       <BiSolidPointer
         color={color}
         className={`text-xl ${
@@ -33,6 +46,6 @@ export const CommentCardPointer = ({
           </p>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
