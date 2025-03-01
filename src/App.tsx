@@ -1,4 +1,3 @@
-import Navbar from './components/navbar';
 import HeroSection from './components/hero-section';
 import { FaTerminal } from 'react-icons/fa';
 import CommentCard from './components/comment-card';
@@ -17,6 +16,7 @@ import { DeployYourFirstAppSection } from './components/deploy-your-first-app-se
 import { CallToAction } from './components/call-to-action';
 import Footer from './components/footer';
 import AnalyticsChart from './components/AnalyticsChart';
+import { Navbar } from './components/app-navbar';
 
 function App() {
   return (

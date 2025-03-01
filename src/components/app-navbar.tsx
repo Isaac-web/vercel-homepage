@@ -4,7 +4,7 @@ import NavbarListItem from './navbar-list-item';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
 
-const Navbar = () => {
+export const Navbar = () => {
   const [menuIndex, setMenuIndex] = useState(0);
   const [activeLink, setActiveLink] = useState<number | undefined>(undefined);
   const [isMenuHovered, setIsMenuHovered] = useState(false);
@@ -141,5 +141,3 @@ const Navbar = () => {
     </header>
   );
 };
-
-export default Navbar;

@@ -57,7 +57,10 @@ export const DeployOnceDeliverEverywhereSection = () => {
         </div>
 
         <div className="col-span-3 lg:col-span-1">
-          <div className="w-full h-[30em] bg-gray-100/10" />
+          <div className="w-full h-[30em] bg-gray-100/10">
+            <img src={''} />
+          </div>
+
           <div className="py-7 px-4">
             <p className="text-xl text-white/40">
               <span className="text-white/90">All the data. </span>
