@@ -3,8 +3,10 @@
 ![image](https://github.com/user-attachments/assets/b1e5dd78-f3fa-4599-b207-e87601b8e86c)
 
 
-[Link to deployed website]([https://example.com](https://vercel-homepage-challenge.vercel.app/))
+[Link to deployed website](https://vercel-homepage-challenge.vercel.app)
+
 <br>
+
 ![vercel-homepage](https://github.com/user-attachments/assets/36235bac-ba46-4a76-8c9d-68e6c49eb8c3)
 
 This project is a **replication of the Vercel.com homepage**, built to closely match the **design, layout, and interactive elements** of the live site. The goal was to **recreate the experience** as accurately as possible using modern web technologies.
